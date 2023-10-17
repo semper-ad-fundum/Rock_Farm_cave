@@ -1,0 +1,36 @@
+encoding  utf-8
+language en
+
+source "Rock_Farm_cave.th"
+
+export model -o output/rock_farm.lox
+export model -format survex -o output/rock_farm.3d
+export map -o output/rock_farm.kml
+export map -o output/rock_farm.xvi
+export map -projection extended -o output/rock_farm_ext.xvi
+
+layout normal
+     scale 1 100
+     #symbol-set AUT
+     doc-author "Pawel Krawczyk"
+     doc-title "Rock Farm cave"
+     statistics explo all
+     statistics topo all
+     statistics carto all
+     statistics copyright all
+     color map-fg 80
+     legend on
+     map-comment "Windsor Hill, Croscombe (Mendip)"
+     # for debugging
+     #symbol-show point cave-station
+     #symbol-show group cave-centerline
+     #debug station-names
+     #map-header 0 0 off
+     symbol-hide group cave-centerline
+     symbol-hide group surface-centreline
+     symbol-hide point surface-station
+     symbol-hide point cave-station
+endlayout
+
+export map -format pdf -layout normal -o output/rock_farm.pdf
+export map -format pdf -layout normal -projection extended -o output/rock_farm_ext.pdf
