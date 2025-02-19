@@ -8,7 +8,9 @@ survey Rock_Farm_cave -title "Rock Farm cave" -entrance 0
 
   map m1p -projection plan
      Rock_Farm_cave-1p
+     break
      scrap155
+     break
      scrap208
   endmap
   map m1s -projection extended
@@ -22,7 +24,7 @@ survey Rock_Farm_cave -title "Rock Farm cave" -entrance 0
     station 0 Entrance entrance
     date 2021.04.10 
     team "Clive North"
-    team "Paweł Krawczyk"
+    team "Pawel Krawczyk"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -10,8 +10,7 @@ export map -o output/rock_farm.xvi
 export map -projection extended -o output/rock_farm_ext.xvi
 
 layout normal
-     scale 1 100
-     #symbol-set AUT
+     scale 1 70
      doc-author "Pawel Krawczyk"
      doc-title "Rock Farm cave"
      statistics explo all

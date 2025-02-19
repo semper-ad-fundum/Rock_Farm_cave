@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -542.75 -1382.55 456.0 138.75
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -542.75 -1382.55 454.0 51.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {-414.75 1 1.0} {-1254.55 0} Rock_Farm_cave-1p.xvi 0 {}
 
 # 2021.04.11 created by TopoDroid v. 5.1.2
@@ -62,6 +62,16 @@ line wall
 endline
 
 point 181.75 -109.25 entrance -orientation 172.7
+
+line wall -subtype invisible
+  124.25 -79.0
+  128.5 -167.5
+endline
+
+line wall -subtype invisible
+  293.75 -126.75
+  291.5 -79.5
+endline
 
 line wall -reverse on
   293.75 -126.75
@@ -372,11 +382,39 @@ line wall
   -10.5 -830.0
 endline
 
-point -27.32 -825.13 dig
+line wall
+  -23.0 -910.75
+  -18.25 -897.0
+  -19.5 -888.0
+  -23.25 -875.0
+  -23.75 -866.0
+  -24.0 -854.25
+endline
+
+point -26.25 -890.0 clay
+
+point -29.0 -925.0 clay-choke
+
+line wall
+  -31.0 -854.75
+  -55.0 -850.0
+endline
+
+line wall -reverse on
+  -31.5 -861.75
+  -55.75 -855.75
+endline
+
+line wall
+  -31.5 -861.75
+  -32.5 -910.0
+endline
 
 point 17.0 -838.75 water-flow -orientation 194.0
 
 point 32.769999999999996 -807.21 water-flow -orientation 203.1
+
+point -45.25 -855.0 water-flow -orientation 103.0
 
 line wall
   19.5 -849.5
@@ -397,6 +435,8 @@ line wall -subtype presumed
   143.5 -745.25
   152.0 -765.5
 endline
+
+point -7.640000000000001 -733.51 section -scrap scrap233
 
 line wall
   150.5 -747.0
@@ -567,35 +607,11 @@ line slope
   l-size 10.0
 endline
 
-area water
-  l26-232--376
-  l123-229--366
-  l198-236--360
-  l189-262--371
-endarea
+point 235.0 -421.25 debris
 
-line border -id l198-236--360 -reverse on
-  226.75 -360.5
-  226.75 -360.5 230.63 -354.56 267.75 -369.5
-  smooth off
-endline
+point 247.75 -300.5 debris
 
-area water
-  l195-296--217
-  l190-295--210
-  l196-322--156
-  l193-316--180
-endarea
-
-line border -id l196-322--156 -reverse on
-  316.5 -154.0
-  327.0 -159.0
-endline
-
-line border -id l195-296--217
-  283.75 -211.25
-  304.0 -221.25
-endline
+point 276.0 -248.0 debris
 
 line pit -id l26-232--376
   222.04 -364.94
@@ -615,7 +631,7 @@ line pit
   223.87 -325.38
 endline
 
-point 251.18 -334.32 water-flow -orientation 184.32
+point 248.43 -343.57 water-flow -orientation 184.32
 
 point 238.95 -496.12 water-flow -orientation 178.3
 
@@ -724,6 +740,11 @@ line wall -reverse on -subtype presumed
   13.75 -760.75
 endline
 
+line section -reverse on -direction both
+  25.0 -741.0
+  85.5 -780.5
+endline
+
 line wall
   106.5 -675.25
   92.79 -686.56
@@ -745,12 +766,12 @@ line wall -subtype presumed
   8.75 -864.75
 endline
 
-line wall -subtype presumed
+line wall
   -24.0 -854.25
   -23.75 -843.0
 endline
 
-line wall -subtype presumed
+line wall
   -32.25 -842.0
   -31.0 -854.75
 endline
@@ -770,8 +791,6 @@ line wall
   -1.75 -833.25
   8.75 -849.0
 endline
-
-point 16.560000000000002 -759.45 air-draught -orientation 275.8
 
 line wall -reverse on
   280.65 -233.14
@@ -1175,6 +1194,36 @@ endline
 line u:splay -visibility off
   7.8 -291.25
   -24.8 -330.84
+endline
+
+endscrap
+
+
+
+scrap scrap233 -projection none -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall -close on
+  -73.75 -733.5
+  -62.5 -733.75
+  -51.5 -733.25
+  -42.0 -733.5
+  -42.0 -733.5 -34.0 -734.0 -33.0 -733.5
+  -32.0 -733.0 -25.0 -731.75 -25.0 -731.75
+  smooth off
+  -18.75 -732.5
+  -14.25 -731.5
+  -16.0 -730.0
+  -19.0 -723.25
+  -23.75 -722.0
+  -30.0 -722.25
+  -39.5 -722.75
+  -45.0 -723.0
+  -53.0 -723.25
+  -62.25 -722.0
+  -68.5 -723.75
+  -71.25 -726.75
+  -72.5 -731.25
+  -73.75 -733.5
 endline
 
 endscrap
